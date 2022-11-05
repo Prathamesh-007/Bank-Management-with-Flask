@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Run</title>
+</head>
+<body>
+    {% if name %}
+    <center>  
+        <h3  style="color: green;">Name: {{name}}</h3>
+        <br><br><hr>
+        <h3  style="color: green;">Date of Birth: {{birthdate}}</h3>
+
+        <form class="grid" action="/BankOptions" method="post">
+            <h3>Select your option:</h3>
+            <br>
+            <h4><a href="/Deposit">1. Deposit</a></h4>
+            <h4><a href="/Withdraw">2. Withdraw</a></h4>
+            <h4><a href="/Show Details">3. Show Details</a></h4>
+            <h4><a href="/">4. Go to home</a></h4>
+        </form>
+    </center>
+    {% else %}
+    <center>
+        <h3>No Input Received</h3>
+    </center>
+    {% endif %}
+
+    
+    
+</body>
+</html>
