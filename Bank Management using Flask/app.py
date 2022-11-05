@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import SQL_Control_Functions as SCF
-mydb = SCF.connect_server("localhost", "Shambhu Kaka", "shree_123", "Test")
+mydb = SCF.connect_server("localhost", "Shambhu Kaka", "", "Test")
 
 app = Flask(__name__)
 
